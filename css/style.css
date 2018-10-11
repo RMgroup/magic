@@ -1,0 +1,631 @@
+@import url(https://fonts.googleapis.com/css?family=Economica&subset=latin,latin-ext);
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~
+Üldine Cx
+~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0 4px 0 0;
+    cursor: default;
+    overflow: hidden;
+    color: #d9d9d9 !important;
+    -webkit-user-select: text;
+    font-family: 'Economica', sans-serif !important;
+    background-image: url("../img/taust.jpg");
+    background-size: cover;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none !important;
+    outline: 0 !important;
+    cursor: pointer;
+}
+
+::selection {
+    background: #f34646;
+}
+
+::-moz-selection {
+    background: #f34646;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #f34646;
+    border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #f34656;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~
+Laadur ;3
+~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.laadi {
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+    position: absolute;
+    z-index: 2;
+}
+
+.lubaJS {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: middle;
+}
+
+.lubaJS img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~
+Menüü :O
+~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: white !important;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-text,
+.navbar-default .navbar-link {
+    color: #d9d9d9 !important;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.navbar-text {
+    margin-left: 0 !important;
+}
+
+.navbar-default .navbar-link:hover,
+.navbar-default .navbar-link:focus {
+    color: white !important;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent !important;
+    border-bottom: 1px solid #f34646 !important;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.navbar-default .navbar-collapse {
+    border: none !important;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.navbar-toggle {
+    margin-right: 0 !important;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: white !important;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.navbar-default {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border: none !important;
+    padding: 0 6% !important;
+    height: 50px;
+    z-index: 1 !important;
+}
+
+div.brand {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    max-width: 58px;
+    overflow: hidden;
+    padding: 5px 0 0 0 !important;
+    margin-right: 5px;
+}
+
+.nav>li>a {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+div.aut {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    max-width: 74px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+div.auta {
+    float: right!important;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~
+Põhikaart (8( l)
+~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+div.main {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 15px;
+    z-index: 0;
+}
+
+div.leht {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 65px 6% 0 6%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+div.peida {
+    opacity: 0; 
+    height: 0;
+}
+
+div.leht:target {
+    height: 100%;
+    opacity: 1;
+    overflow: visible;
+}
+
+div.leht h2 {
+    letter-spacing: 0.1em;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+div.leht p {
+    font-size: medium;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~
+Kodu (^.^(
+~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+div.leht#kodu h2 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div.leht#kodu {
+    background-color: rgba(0, 0, 0, 0.35);
+    display: table;
+    padding-top: 50px;
+    position: absolute;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~
+Teenused ^-^
+~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#teenused ul {
+    list-style: none;
+}
+
+#teenused a,
+#teenused a:visited {
+    color: #d9d9d9 !important;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#teenused a:hover,
+#teenused a:focus {
+    color: white !important;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#veebidisain i.tagasi,
+#fotograafia i.tagasi {
+    color: #d9d9d9;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1%;
+    font-size: x-large;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#veebidisain i.tagasi:hover,
+#veebidisain i.tagasi:focus,
+#fotograafia i.tagasi:hover,
+#fotograafia i.tagasi:focus {
+    color: #fff;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#veebidisain h2,
+#fotograafia h2 {
+    margin-bottom: 0%;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~
+Kontakt :b
+~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.sots {
+    font-size: 22px;
+    padding-top: 5px;
+}
+
+.sots a i {
+    padding-right: 2px;
+    padding-left: 2px;
+    color: #d9d9d9;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.sots a i:hover,
+.sots a i:focus {
+    color: #fff;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.kontakt {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea,
+#contact button[type="submit"] {
+    color: #333;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+    -webkit-transition: border-color 0.3s ease;
+    -moz-transition: border-color 0.3s ease;
+    -o-transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease;
+    -moz-transition: border-color 0.3s ease;
+    -o-transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease;
+    border: 1px solid #aaa;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+    transition: background-color 0.3s ease;
+    border: none !important;
+    outline: 0;
+    cursor: pointer;
+    width: 100%;
+    background: #f34646;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+    background: #f34656;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+    text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+:-moz-placeholder {
+    color: #888;
+}
+
+::-moz-placeholder {
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    color: #888;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~
+Fotograafia o;
+~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.stage > ul {
+    color: #ECECEC;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.stage > a {
+    color: #c48ec8;
+    -webkit-transition: color 0.25s cubic-bezier(0.860, 0.000, 0.070, 1.000);
+    -moz-transition: color 0.25s cubic-bezier(0.860, 0.000, 0.070, 1.000);
+    -o-transition: color 0.25s cubic-bezier(0.860, 0.000, 0.070, 1.000);
+    transition: color 0.25s cubic-bezier(0.860, 0.000, 0.070, 1.000);
+    /* ease-in-out */
+}
+
+ul.animate {
+    -webkit-transition: -webkit-transform 0.75s cubic-bezier(0.860, 0.000, 0.070, 1.000);
+    -moz-transition: transform 0.75s cubic-bezier(0.860, 0.000, 0.070, 1.000);
+    -o-transition: transform 0.75s cubic-bezier(0.860, 0.000, 0.070, 1.000);
+    transition: transform 0.75s cubic-bezier(0.860, 0.000, 0.070, 1.000);
+    /* ease-in-out */
+}
+
+.stage {
+    margin: 0 0 5% 0;
+    padding: 0 12%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.stage > .sldr {
+    max-width: 825px;
+    margin: 0 auto;
+    overflow: visible;
+    position: relative;
+    clear: both;
+    display: block;
+}
+
+.sldr > ul > li {
+    float: left;
+    display: -webkit-box;
+    width: 825px;
+}
+
+div.skew {
+    max-width: 825px;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+    -webkit-transform: skewX(16deg);
+    -moz-transform: skewX(16deg);
+    -ms-transform: skewX(16deg);
+    transform: skewX(16deg);
+}
+
+div.skew > div.wrap {
+    display: block;
+    overflow: hidden;
+    -webkit-transform: skewX(-16deg);
+    -moz-transform: skewX(-16deg);
+    -ms-transform: skewX(-16deg);
+    transform: skewX(-16deg);
+    margin-left: -10.1%;
+    width: 122%;
+}
+
+.stage > img {
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.stage > .selectors {
+    /*margin: 15px 0 0;*/
+}
+
+.stage > .selectors li {
+    font-size: 46px;
+    line-height: 32px;
+    display: inline;
+    padding: 0 2px;
+}
+
+.stage > .selectors li a {
+    text-decoration: none;
+}
+
+.stage > .selectors li.focalPoint a {
+    color: #CCC;
+    cursor: default;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~
+Reag. Korrapärasus x3
+~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media only screen and (max-width: 402px) {
+    div.leht {
+        padding: 50px 1% 1% 1%;
+    }
+    .navbar-default {
+        padding: 0 1% 0 1% !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    div.aut {
+        max-width: 100%;
+        margin: -5px 0 0 -6px;
+    }
+    div.auta {
+        display: none;
+    }
+    .navbar-default .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.5) !important;
+    }
+}
+
+@-moz-document url-prefix() {
+    div.aut {
+        max-width: 97px;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    div.brand:hover,
+    div.brand:focus,
+    div.brand.hover_effect {
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        max-width: 233px;
+    }
+    .navbar-text:hover > div.aut,
+    .navbar-text.hover_effect > div.aut,
+    .navbar-text:focus > div.aut {
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        max-width: 128px;
+    }
+}
+
+@media only screen and (min-width: 310px) and (max-width: 767px) {
+    div.brand:hover,
+    div.brand.hover_effect {
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        max-width: 100%;
+    }
+    div.brand:focus {
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        max-width: 100%;
+    }
+}
